@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.0" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Account">
+      <HintPath>..\..\..\si.core.lib\dotnet core\CoreLib\Account\bin\Debug\netcoreapp2.0\Account.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreDomain">
+      <HintPath>..\..\..\si.core.lib\dotnet core\CoreLib\CoreDomain\bin\Debug\netcoreapp2.0\CoreDomain.dll</HintPath>
+    </Reference>
+    <Reference Include="OrgAccount">
+      <HintPath>..\..\..\si.core.lib\dotnet core\CoreLib\OrgAccount\bin\Debug\netcoreapp2.0\OrgAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="OrgAccountDALLib">
+      <HintPath>..\..\..\si.core.lib\dal\CoreDALLib\OrgAccountDALLib\bin\Debug\netcoreapp2.0\OrgAccountDALLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>
